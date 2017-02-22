@@ -102,12 +102,8 @@ header.header {
 						color: $headerTopBackground;
 						transition: .3s;
 						&:hover {
-							opacity: .9;
+							opacity: .8;
 							transition: .3s;
-							transform: scale(1.1);
-						}
-						i {
-							
 						}
 					}
 				}
@@ -182,6 +178,7 @@ main.home {
 			padding: 0;
 			padding: 20px;
 			ul {
+				margin-bottom: 20px;
 				width: 100%;
 				li {
 					display: inline-block;
@@ -219,9 +216,104 @@ main.home {
 					}
 				}
 			}
+			.an-block {
+				.an {
+					margin-bottom: 10px;
+					.thumb {
+						width: 190px;
+						height: 90px;
+						margin-right: 23px;
+						float: left;
+						background-size: cover; 
+						background-position: center center; 
+					}				
+					.info {
+						width: calc(100% - 213px);
+						float: right;
+						.time {
+							font-family: OpenSansSemibold;
+							font-size: 21px;
+							margin-bottom: -8px;
+						}
+						.title {
+							font-size: 18px;
+							line-height: 2.2;
+						}
+						.links {
+							li {
+								width: 100px;
+								height: 25px;
+								border: 1px solid #98a8b3;
+								border-radius: 3px;
+								text-align: center;
+								&:first-child {
+									margin-right: 14px;
+								}
+								a {
+									font-size: 13px;
+									color: #8d9ca6;
+									font-family: OpenSansLight;
+									text-decoration: none;
+									height: 100%;
+									width: 100%;
+									display: block;
+									padding-top: 1px;
+									position: relative;
+									&::after {
+										position: absolute;
+										content: '';
+										top: 0;
+										left: 0;
+										margin: auto;
+										bottom: 0;
+										right: 0;
+										height: 0;
+										background-color: rgba(141, 156, 166, .1);
+										width: 100%;
+										transition: .3s;
+									}
+									&:hover {
+										&::after {
+											width: 100%;
+											transition: .3s;
+											height: 100%;
+											border-radius: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		.right {
 			padding: 0;
+			.video-js {
+				height: 360px;
+				width: 100%;
+			}
+			.onl {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background-color: rgba(255,255,255,.8);
+				text-align: center;
+				color: #1f1f1f;
+				font-size: 20px;
+				text-decoration: none;
+				height: 50px;
+				padding-top: 10px;
+				transition: .3s;
+				i {
+					padding-left: 8px;
+					color: #147abf;
+				}
+				&:hover {
+					background-color: rgba(255,255,255,.9);
+					transition: .3s;
+				}
+			}
 		}
 	}
 }

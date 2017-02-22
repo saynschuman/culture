@@ -9,7 +9,7 @@
 	// 	$(this).attr('placeholder',$(this).data('placeholder'));
 	// });		
 
-	$('#search-ic').click(function(){
+	$('#search-ic').click(function(event){
 		event.preventDefault();
 		$('#search input').toggleClass('searchClass').focus();
 	})
@@ -22,7 +22,10 @@
 	// 		$('#search input').toggleClass('searchClass');
 	//     }
 	// });
-
+	
+	$('video').on('play',(function(){
+		$('.onl').hide();
+	}))
 
 
 }(jQuery));
