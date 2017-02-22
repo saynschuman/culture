@@ -674,3 +674,94 @@ main.home .projects {
           color: #003d66;
           -webkit-transition: .3s;
           transition: .3s; }
+
+footer.footer {
+  background-color: #003d66;
+  width: 100%;
+  float: left;
+  padding-bottom: 20px;
+  color: #d4dfe6; }
+  footer.footer a {
+    color: #d4dfe6;
+    font-size: 14px;
+    line-height: 1.9;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    footer.footer a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: #b8d6ea;
+      -webkit-transition: .3s;
+      transition: .3s; }
+    footer.footer a:hover::after {
+      width: 100%; }
+  footer.footer .footer-inner {
+    padding: 28px 67px; }
+  footer.footer .title {
+    font-size: 15px;
+    color: #edd05e;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    footer.footer .title.title-img::after {
+      background-color: #d4dfe6; }
+    footer.footer .title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: #edd05e;
+      -webkit-transition: .3s;
+      transition: .3s; }
+    footer.footer .title:hover::after {
+      width: 100%; }
+  footer.footer .divider {
+    background-color: #426664;
+    width: 80%;
+    height: 1px;
+    margin: 15px 0; }
+  footer.footer .col {
+    width: 20%;
+    float: left; }
+    footer.footer .col .social {
+      margin: 10px 0; }
+      footer.footer .col .social li {
+        display: inline-block;
+        margin-left: 15px;
+        position: relative; }
+        footer.footer .col .social li:first-child {
+          margin-left: 0; }
+        footer.footer .col .social li:nth-child(2) a {
+          background-position: -43px -2px; }
+        footer.footer .col .social li:last-child a {
+          background-position: -84px -2px; }
+        footer.footer .col .social li a {
+          height: 24px;
+          width: 24px;
+          background-image: url(../img/sprite-header.png);
+          display: block;
+          text-align: center;
+          -webkit-border-radius: 100%;
+                  border-radius: 100%;
+          border: 1px solid #b6c7d3;
+          font-size: 12px;
+          padding: 2px;
+          color: #003d66;
+          -webkit-transition: .3s;
+          transition: .3s;
+          background-position: -2px; }
+          footer.footer .col .social li a::after {
+            display: none; }
+          footer.footer .col .social li a:hover {
+            opacity: .8;
+            -webkit-transition: .3s;
+            transition: .3s; }
