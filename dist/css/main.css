@@ -136,7 +136,23 @@ header.header .header-top {
     margin-right: 35px; }
     header.header .header-top .left-align ul li a {
       font-size: 13px;
-      color: #b8d6ea; }
+      color: #b8d6ea;
+      text-decoration: none;
+      position: relative;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      header.header .header-top .left-align ul li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #b8d6ea;
+        -webkit-transition: .3s;
+        transition: .3s; }
+      header.header .header-top .left-align ul li a:hover::after {
+        width: 100%; }
   header.header .header-top .right-align ul li {
     display: inline-block;
     margin-left: 15px;
