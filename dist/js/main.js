@@ -27,5 +27,15 @@
 		$('.onl').hide();
 	}))
 
+  $('.owl-carousel').owlCarousel({
+	    loop:true,
+	    margin:0,
+	  	items:1,
+	  	nav: true,
+	  	navText: false,
+	  	navSpeed: 500,
+	  	animateOut: false
+	})
+
 
 }(jQuery));

@@ -103,3 +103,38 @@ body {
     height: 60px;
     background-image: url(../img/play.png);
 }
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.owl-prev {
+  left: 40px !important;
+  position: absolute;
+  background-image: url(../img/left.jpg); 
+  height: 26px;
+  width: 13px;
+  opacity: .9;
+  transition: .3s;
+  &:hover {
+    opacity: 1;
+    transition: .3s;
+  }
+}
+.owl-next {
+  right: 40px !important;
+  position: absolute;
+  background-image: url(../img/right.png); 
+  height: 26px;
+  width: 13px;
+  opacity: .9;
+  transition: .3s;
+  &:hover {
+    opacity: 1;
+    transition: .3s;
+  }
+}

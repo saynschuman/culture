@@ -143,6 +143,45 @@ body {
   height: 60px;
   background-image: url(../img/play.png); }
 
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+  display: block; }
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%; }
+
+.owl-prev {
+  left: 40px !important;
+  position: absolute;
+  background-image: url(../img/left.jpg);
+  height: 26px;
+  width: 13px;
+  opacity: .9;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  .owl-prev:hover {
+    opacity: 1;
+    -webkit-transition: .3s;
+    transition: .3s; }
+
+.owl-next {
+  right: 40px !important;
+  position: absolute;
+  background-image: url(../img/right.png);
+  height: 26px;
+  width: 13px;
+  opacity: .9;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  .owl-next:hover {
+    opacity: 1;
+    -webkit-transition: .3s;
+    transition: .3s; }
+
 .wrapper {
   width: 1366px;
   position: relative;
@@ -514,3 +553,50 @@ main.home .blocks .block {
         main.home .blocks .block table tr td:last-child {
           color: #4c4c4c;
           padding-left: 20px; }
+
+main.home .owl-carousel .item {
+  background-color: #fcfcfc;
+  float: left;
+  padding: 25px 140px; }
+  main.home .owl-carousel .item .left {
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+    padding: 0; }
+    main.home .owl-carousel .item .left .ava {
+      display: block;
+      margin: 0 auto;
+      width: 124px;
+      height: 124px;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      background-size: cover; }
+    main.home .owl-carousel .item .left .name {
+      font-size: 18px;
+      color: #333333; }
+    main.home .owl-carousel .item .left .position {
+      font-size: 15px;
+      color: #808080; }
+  main.home .owl-carousel .item .right {
+    border-left: 1px solid #f3f3f3;
+    padding: 0;
+    padding-left: 20px; }
+    main.home .owl-carousel .item .right .title a {
+      font-size: 20px;
+      color: #003d66;
+      text-decoration: none;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      main.home .owl-carousel .item .right .title a:hover {
+        opacity: .8;
+        -webkit-transition: .3s;
+        transition: .3s; }
+    main.home .owl-carousel .item .right .content {
+      font-size: 15px;
+      color: #333;
+      padding: 8px 0;
+      line-height: 1.7; }
+    main.home .owl-carousel .item .right .view {
+      font-size: 14px;
+      color: #3e85b4;
+      display: block;
+      text-decoration: underline; }

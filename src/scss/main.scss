@@ -457,4 +457,61 @@ main.home {
 			}		
 		}
 	}
+	.owl-carousel {
+		.item {
+			background-color: #fcfcfc;
+			float: left;
+			padding: 25px 140px;
+			.left {
+				text-align: center;
+				border-right: 1px solid #fbfbfb;
+				padding: 0;
+				.ava {
+					display: block;
+					margin: 0 auto;
+					width: 124px;
+					height: 124px;
+					border-radius: 100%;
+					background-size: cover;
+				}
+				.name {
+					font-size: 18px;
+					color: #333333;
+				}
+				.position {
+					font-size: 15px;
+					color: #808080;
+				}
+			}
+			.right {
+				border-left: 1px solid #f3f3f3;
+				padding: 0;
+				padding-left: 20px;
+				.title {
+					a {
+						font-size: 20px;
+						color: #003d66;
+						text-decoration: none;
+						transition: .3s;
+						&:hover {
+							opacity: .8;
+							transition: .3s;
+						}
+					}
+				}
+				.content {
+					font-size: 15px;
+					color: #333;
+					padding: 8px 0;
+					line-height: 1.7;
+				}
+				.view {
+					font-size: 14px;
+					color: #3e85b4;
+					display: block;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
