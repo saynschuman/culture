@@ -115,26 +115,27 @@ body {
 .owl-prev {
   left: 40px !important;
   position: absolute;
-  background-image: url(../img/left.jpg); 
+  background-image: url(../img/arrow.png); 
   height: 26px;
   width: 13px;
-  opacity: .9;
   transition: .3s;
   &:hover {
     opacity: 1;
     transition: .3s;
+    background-image: url(../img/arrow-hover.png); 
   }
 }
 .owl-next {
   right: 40px !important;
   position: absolute;
-  background-image: url(../img/right.png); 
+  background-image: url(../img/arrow.png); 
   height: 26px;
   width: 13px;
-  opacity: .9;
   transition: .3s;
+  transform: rotate(-180deg);
   &:hover {
     opacity: 1;
     transition: .3s;
+    background-image: url(../img/arrow-hover.png); 
   }
 }

@@ -34,7 +34,7 @@
 	  	nav: true,
 	  	navText: false,
 	  	navSpeed: 500,
-	  	animateOut: false
+	  	animateOut: false,
 	})
 
 
