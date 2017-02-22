@@ -115,9 +115,61 @@ header.header {
 		}
 	}
 	.header-middle {
-
+		height: 130px;
+		width: 100%;
+		background-image: url(../img/header-background.jpg);
+		padding: 33px 48px;
+		.slogan {
+			font-size: 16px;
+			color: #fff;
+		}
+		.logo {
+			margin-bottom: 12px;
+			display: block;
+		}
 	}
 	.header-bottom {
-
+		background-color: $headerBottomBackground;
+		nav {
+			width: 100%;
+			ul {
+				padding: 0;
+				margin: 0;
+				li {
+					text-align: center;
+					border-right: 1px solid #fff;
+					&::last-child {
+						border-right: none;
+					}
+					a {
+						color: #fff;
+						width: 100%;
+						display: block;
+						font-size: 13px;
+						text-transform: uppercase;
+						text-decoration: none;
+						transition: .3s;
+						padding: 12px 0;
+						&::after {
+							content: '';
+							position: absolute;
+							left: 0;
+							top: 0;
+							right: 0;
+							margin: auto;
+							width: 0;
+							height: 100%;
+							background-color: rgba(255,255,255,.1);
+							transition: .3s;
+						}
+						&:hover {
+							&::after {
+								width: 100%;
+							}
+						}						
+					}
+				}
+			}
+		}
 	}
 }
