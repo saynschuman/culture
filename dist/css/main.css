@@ -461,15 +461,19 @@ main.home .blocks .block {
     width: 100%;
     position: relative;
     padding: 10px 20px;
-    background-color: #fcfcfc; }
+    background-color: #fcfcfc;
+    height: 270px;
+    overflow: auto; }
+    main.home .blocks .block .info.info-big {
+      height: 310px;
+      margin-top: 10px; }
     main.home .blocks .block .info.last-video table tr td:first-child {
       width: 30%; }
     main.home .blocks .block .info.last-video table tr td:last-child {
       width: 70%; }
   main.home .blocks .block table {
     width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px; }
+    max-width: 100%; }
     main.home .blocks .block table tr {
       font-size: 15px;
       font-family: OpenSansLight;

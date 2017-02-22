@@ -379,6 +379,12 @@ main.home {
 				position: relative;
 				padding: 10px 20px;
 				background-color: #fcfcfc;
+				height: 270px;
+				overflow: auto;
+				&.info-big {
+					height: 310px;
+					margin-top: 10px;
+				}
 				&.last-video {
 					table {
 						tr {
@@ -397,7 +403,6 @@ main.home {
 			table {
 			    width: 100%;
 			    max-width: 100%;
-			    margin-bottom: 20px;
 			    tr {
 			    	font-size: 15px;
 			    	font-family: OpenSansLight;
