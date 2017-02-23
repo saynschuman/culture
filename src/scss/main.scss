@@ -784,7 +784,7 @@ main.about {
 		font-size: 20px;
 		color: #003d66;
 		font-weight: 400;
-		margin-bottom: 3px;
+		margin-bottom: 10px;
 	}
 	h3 {
 		font-size: 15px;
@@ -893,6 +893,164 @@ main.about {
 								opacity: .8;
 								transition: .3s;
 							}							
+						}
+					}
+				}
+			}
+		}
+	}
+	.awards {
+		padding: 20px 0;
+		table {
+		    width: 100%;
+    		max-width: 100%;
+    		border: 1px solid #c3c3c3;
+    		margin: 25px 0 0;
+    		text-align: left;
+    		tr {
+    			th {
+    				padding: 15px 20px;
+    				vertical-align: middle;
+    				font-size: 15px;
+    				color: #1f1f1f;
+    				font-family: OpenSansSemibold;
+    				border-bottom: 1px solid #c3c3c3;
+    				&:first-child {
+    					width: 5%;
+    				}
+    				&:nth-child(2) {
+    					width: 15%;
+    				}
+    				&:nth-child(3) {
+    					width: 15%;
+    				}
+    				&:nth-child(4) {
+    					width: 25%;
+    				}
+    				&:nth-child(5) {
+    					width: 10%;
+    				}
+    				&:nth-child(6) {
+    					width: 30%;
+    				}
+    			}
+    			td {
+    				padding: 15px 20px;
+    				font-size: 15px;
+    				color: #1f1f1f;
+    				font-family: OpenSansLight;
+    				vertical-align: top;
+    				&:first-child {
+    					width: 5%;
+    				}
+    				&:nth-child(2) {
+    					width: 15%;
+    				}
+    				&:nth-child(3) {
+    					width: 15%;
+    				}
+    				&:nth-child(4) {
+    					width: 25%;
+    				}
+    				&:nth-child(5) {
+    					width: 10%;
+    				}
+    				&:nth-child(6) {
+    					width: 30%;
+    				}    				
+    			}
+    		}
+		}
+	}
+	.vacancies {
+		color: #1f1f1f;
+		.vacancy {
+			.title {
+				border-bottom: 1px solid #ebedec;
+				padding-bottom: 10px;
+				.name {
+					font-family: OpenSansSemibold;
+					font-size: 18px;
+				}
+				ul {
+					li {
+						display: inline-block;
+						padding-left: 0;
+						font-family: OpenSansLight;
+						font-size: 15px;
+						&::before {
+							display: none;
+						}
+						&:last-child {
+							float: right;
+						}
+					}
+				}
+			}
+			.vacancy-description {
+				font-size: 14px;
+				padding: 12px 0 0;
+				ul {
+					margin-bottom: 12px;
+					li {
+						line-height: 1.8;
+						&::before {
+							top: 12px;
+						}
+					}
+				}
+			}
+			.respond {
+				border-top: 1px solid #ebedec;
+				padding-top: 10px;
+				form {
+					padding: 13px 0 40px;
+					font-size: 13px;
+					font-family: OpenSansLight;
+					label {
+						color: #8d9ca6;
+						border: 1px solid #8d9ca6;
+						border-radius: 3px;
+						padding: 10px;
+						cursor: pointer;
+						position: relative;
+						&::after {
+							position: absolute;
+							content: '';
+							top: 0;
+							left: 0;
+							margin: auto;
+							bottom: 0;
+							right: 0;
+							height: 0;
+							background-color: rgba(141, 156, 166, .1);
+							width: 100%;
+							transition: .3s;
+						}
+						&:hover {
+							&::after {
+								width: 100%;
+								transition: .3s;
+								height: 100%;
+								border-radius: 0;
+							}
+						}						
+					}
+					#resume {
+						display: none;
+					}
+					input[type="submit"] {
+						background-color: $headerTopBackground;
+						border-radius: 3px;
+						border: 1px solid $headerTopBackground;
+						padding: 10px 17px;
+						color: #fff;
+						margin-left: 8px;
+						transition: .3s;
+						&:hover {
+							background-color: #fff;
+							color: $headerTopBackground;
+							border: 1px solid #8d9ca6;
 						}
 					}
 				}
