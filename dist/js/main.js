@@ -45,5 +45,38 @@
         }
     } catch (err) {};
 
+    // vlidation
+
+	 $("#contact").validate({
+	    rules:{
+	      name:{
+	        required: true,
+	        minlength: 2
+	      },
+	      email:{
+	        required: true,
+	        minlength: 5
+	      },
+	      text:{
+	        required: true,
+	        minlength: 10
+	      }
+	    },
+	    messages:{
+		      name:{
+		        required: "Будь ласка, вкажіть Ваше Ім'я",
+		        minlength: jQuery.validator.format("Введіть, як мінімум, два символи")
+		      },
+		      text:{
+		        required: "Будь ласка, напишіть текст Вашого повідомлення",
+		        minlength: jQuery.validator.format("Введіть, як мінімум, десять символів")
+		      },		      
+		      email: {
+		        required: "Будь ласка, вкажіть Ваш e-mail",
+		        minlength: jQuery.validator.format("Введіть, як мінімум, два символи"),
+		        email: "Email має містити символ <@>, а також ім'я доменної зони"
+		      }
+	      }           
+	  });    
 
 }(jQuery));

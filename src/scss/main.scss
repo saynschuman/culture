@@ -721,6 +721,7 @@ footer.footer {
 
 main.about {
 	padding: 15px;
+	padding-bottom: 40px;
 	ul {
 		li {
 			padding-left: 10px;
@@ -1053,6 +1054,128 @@ main.about {
 							border: 1px solid #8d9ca6;
 						}
 					}
+				}
+			}
+		}
+	}
+	.contacts {
+		#map {
+		    width: 100%;
+			height: 309px;
+		}
+		.contact-info {
+			margin-top: 20px;
+			.title {
+				color: #003d66;
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+			p {
+				font-size: 15px;
+			}
+			ul.common {
+				li {
+					padding-left: 13px;
+					&::before {
+						left: 4px;
+					}
+				}
+			}
+			ul.links {
+				margin-top: 20px;
+				li {
+					padding-left: 20px;
+					line-height: 2;
+					a {
+						color: #3e85b4;
+					}
+					&::before {
+						display: none;
+					}
+					&:first-child {
+						&::after {
+							content: '\f0ac';
+							position: absolute;
+							left: 2px;
+							top: 0px;
+							font-family: FontAwesome;
+							color: #f1ce42;
+						}
+					}
+					&:last-child {
+						&::after {
+							content: '\f003';
+							position: absolute;
+							left: 1px;
+							top: 0px;
+							font-family: FontAwesome;
+							color: #f1ce42;
+						}
+					}
+				}
+			}
+			form {
+				input {
+					display: block;
+					width: 100%;
+					margin-bottom: 10px;
+					background-color: #f7f7f7;
+					color: #7e7e7e;
+					font-size: 13px;
+					font-family: OpenSansLight;
+					border: none;
+					border-radius: 3px;
+					padding-left: 14px;
+					height: 35px;
+					&[type="submit"] {
+						background-color: $headerTopBackground;
+						border-radius: 3px;
+						border: 1px solid $headerTopBackground;
+						padding: 0;
+						color: #fff;
+						margin-left: 8px;
+						transition: .3s;
+						width: 115px;
+						margin-left: 0;
+						&:hover {
+							background-color: #fff;
+							color: $headerTopBackground;
+							border: 1px solid #8d9ca6;
+						}
+					}
+					&.error {
+						border: 1px solid red;
+						background-color: rgba(255, 0, 0, .1);
+					}	
+				}
+				textarea {
+					display: block;
+					width: 100%;
+					margin-bottom: 10px;
+					background-color: #f7f7f7;
+					color: #7e7e7e;
+					font-size: 13px;
+					font-family: OpenSansLight;
+					border: none;
+					border-radius: 3px;
+					padding-left: 14px;
+					resize: none;
+					height: 70px;
+					padding-top: 10px;
+					&:focus {
+						outline: none
+					}
+					&.error {
+						border: 1px solid red;
+						background-color: rgba(255, 0, 0, .1);
+					}
+				}
+				label.error {
+				    margin-top: -5px;
+				    display: block;
+				    margin-bottom: 5px;
+				    color: red;
+				    font-size: 12px;
 				}
 			}
 		}

@@ -285,6 +285,40 @@
 		</div>
 		<div class="contacts">
 			<h2>Наші контакти</h2>
+			<div id="map"></div>
+			<div class="contact-info clearfix">
+				<div class="inf col-md-4">
+					<div class="title">Контакти</div>
+					<p>Філія Національної телекомпанії України <br>
+					"Центральна дирекція, канал "Культура" <br>
+					04119, Україна, м. Київ, вул. Мельникова, 42 <br>
+					Телефон приймальні: (044) 483 40 40 <br>
+					Телефон чергового: (044) 483 01 47</p>
+					<ul class="links">
+						<li><a href="http://cultureua.com/">cultureua.com</a></li>
+						<li><a href="mailto:kultura_tv@i.ua">kultura_tv@i.ua</a></li>
+					</ul>
+				</div>
+				<div class="inf col-md-4">
+					<div class="title">Супутникове мовлення</div>
+					<ul class="common">
+						<li>Супутник - Amos 2 (4°W);</li>
+						<li>Частота - 10759.00MHz;</li>
+						<li>Поляризація - H (горизонтальна);</li>
+						<li>SR (символьна швидкість) - 30000</li>
+						<li>FEC - 3/4.</li>
+					</ul>
+				</div>
+				<div class="inf col-md-4">
+					<div class="title">Зворотній зв’язок</div>
+					<form id="contact" action="">
+						<input autocomplete="off" name="name" placeholder="Ім'я" type="text">
+						<input autocomplete="off" name="email" placeholder="E-mail" type="email">
+						<textarea autocomplete="off" name="text" placeholder="Повідомлення"></textarea>
+						<input type="submit" value="Надіслати">
+					</form>
+				</div>				
+			</div>
 		</div>
 	</div>
 </main>
@@ -350,6 +384,22 @@
     <script src="libs/js/afterglow.min.js"></script>
     <script src="libs/js/owl-carousel.min.js"></script>
     <script src="libs/js/smoth-scroll.min.js"></script>
+    <script src="libs/js/validate.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="js/main.js"></script>
+    <script>
+	    var map;
+	    function initMap() {
+	        map = new google.maps.Map(document.getElementById('map'), {
+	            center: {lat: 50.473431, lng: 30.459230},
+	            zoom: 16
+	        });
+				var marker = new google.maps.Marker({
+			    position: {lat: 50.473431, lng: 30.459230},
+			    map: map,
+			    title: 'вулиця Мельникова, 42'
+			});
+	    }
+	</script>
   </body>
 </html>

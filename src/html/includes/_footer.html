@@ -60,6 +60,22 @@
     <script src="libs/js/afterglow.min.js"></script>
     <script src="libs/js/owl-carousel.min.js"></script>
     <script src="libs/js/smoth-scroll.min.js"></script>
+    <script src="libs/js/validate.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="js/main.js"></script>
+    <script>
+	    var map;
+	    function initMap() {
+	        map = new google.maps.Map(document.getElementById('map'), {
+	            center: {lat: 50.473431, lng: 30.459230},
+	            zoom: 16
+	        });
+				var marker = new google.maps.Marker({
+			    position: {lat: 50.473431, lng: 30.459230},
+			    map: map,
+			    title: 'вулиця Мельникова, 42'
+			});
+	    }
+	</script>
   </body>
 </html>
