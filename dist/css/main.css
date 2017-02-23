@@ -313,7 +313,7 @@ header.header .header-bottom {
       header.header .header-bottom nav ul li {
         text-align: center;
         border-right: 1px solid #fff; }
-        header.header .header-bottom nav ul li::last-child {
+        header.header .header-bottom nav ul li:last-child {
           border-right: none; }
         header.header .header-bottom nav ul li a {
           color: #fff;
@@ -729,7 +729,7 @@ footer.footer {
     display: inline-block;
     cursor: pointer; }
     footer.footer .title.title-img::after {
-      background-color: #d4dfe6; }
+      display: none; }
     footer.footer .title::after {
       content: '';
       position: absolute;

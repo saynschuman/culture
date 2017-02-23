@@ -134,7 +134,7 @@ header.header {
 				li {
 					text-align: center;
 					border-right: 1px solid #fff;
-					&::last-child {
+					&:last-child {
 						border-right: none;
 					}
 					a {
@@ -644,7 +644,7 @@ footer.footer {
 		cursor: pointer;
 		&.title-img {
 			&::after {
-				background-color: #d4dfe6;
+				display: none;
 			}
 		}
 		&::after {
