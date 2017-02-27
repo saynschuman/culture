@@ -1262,117 +1262,224 @@ main.about {
       color: red;
       font-size: 12px; }
 
-main.program .main-inner-10 {
-  padding: 0 26px 30px; }
-
-main.program ul.choose-block {
-  margin-top: 15px; }
-  main.program ul.choose-block li {
-    display: inline-block;
-    padding: 0;
-    font-size: 14px;
-    color: #333333; }
-    main.program ul.choose-block li::before {
-      display: none; }
-    main.program ul.choose-block li:first-child {
-      font-size: 20px;
-      color: #1f1f1f;
-      margin-right: 74px; }
-    main.program ul.choose-block li label {
-      cursor: pointer; }
-    main.program ul.choose-block li input {
-      color: #7f7f7f;
-      border: 1px solid #f2f2f2;
-      -webkit-border-radius: 3px;
-              border-radius: 3px;
-      width: 158px;
-      height: 34px;
-      padding-left: 10px;
-      margin-left: 10px;
-      margin-right: 40px; }
-      main.program ul.choose-block li input.error {
-        border: 1px solid red; }
-    main.program ul.choose-block li input[type="submit"] {
-      background-color: #003d66;
-      -webkit-border-radius: 3px;
-              border-radius: 3px;
-      border: 1px solid #003d66;
-      color: #fff;
-      margin-left: 8px;
-      -webkit-transition: .3s;
-      transition: .3s;
-      width: 95px; }
-      main.program ul.choose-block li input[type="submit"]:hover {
-        background-color: #fff;
-        color: #003d66;
-        border: 1px solid #8d9ca6; }
-
-main.program .events {
-  margin-top: 20px; }
-  main.program .events .event {
-    font-family: OpenSansLight;
-    margin: 10px 0;
-    margin-bottom: 20px; }
-    main.program .events .event .title {
-      font-size: 18px;
-      color: #333;
-      line-height: 1.6;
-      margin-bottom: -2px; }
-    main.program .events .event .date {
-      color: #808080;
-      font-size: 15px; }
-    main.program .events .event .content {
-      font-size: 15px;
-      color: #4c4c4c;
-      line-height: 1.6; }
-    main.program .events .event .view {
-      display: block;
-      color: #3e85b4;
-      font-size: 15px;
-      text-decoration: underline;
-      line-height: 1.6;
-      width: 82px;
-      -webkit-transition: .3s;
-      transition: .3s; }
-      main.program .events .event .view:hover {
-        opacity: .8;
+main.program {
+  padding-bottom: 70px; }
+  main.program .main-inner-10 {
+    padding: 0 26px 30px; }
+  main.program ul.choose-block {
+    margin-top: 15px; }
+    main.program ul.choose-block li {
+      display: inline-block;
+      padding: 0;
+      font-size: 14px;
+      position: relative;
+      color: #333333; }
+      main.program ul.choose-block li i {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        color: #0070bb; }
+      main.program ul.choose-block li::before {
+        display: none; }
+      main.program ul.choose-block li:first-child {
+        font-size: 20px;
+        color: #1f1f1f;
+        margin-right: 74px; }
+      main.program ul.choose-block li label {
+        cursor: pointer; }
+      main.program ul.choose-block li input {
+        color: #7f7f7f;
+        border: 1px solid #f2f2f2;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        width: 158px;
+        height: 34px;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 40px; }
+        main.program ul.choose-block li input.error {
+          border: 1px solid red; }
+      main.program ul.choose-block li input[type="submit"] {
+        background-color: #003d66;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        border: 1px solid #003d66;
+        color: #fff;
+        margin-left: 8px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        width: 95px; }
+        main.program ul.choose-block li input[type="submit"]:hover {
+          background-color: #fff;
+          color: #003d66;
+          border: 1px solid #8d9ca6; }
+  main.program .events {
+    margin-top: 20px; }
+    main.program .events .event {
+      font-family: OpenSansLight;
+      margin: 10px 0;
+      margin-bottom: 20px; }
+      main.program .events .event .title {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: -2px; }
+      main.program .events .event .date {
+        color: #808080;
+        font-size: 15px; }
+      main.program .events .event .content {
+        font-size: 15px;
+        color: #4c4c4c;
+        line-height: 1.6; }
+      main.program .events .event .view {
+        display: block;
+        color: #3e85b4;
+        font-size: 15px;
+        text-decoration: underline;
+        line-height: 1.6;
+        width: 82px;
         -webkit-transition: .3s;
         transition: .3s; }
-    main.program .events .event .thumb {
-      height: 280px;
-      width: 100%;
-      background-size: cover;
-      margin-bottom: 10px; }
-
-main.program .more-events {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  padding: 7px;
-  color: #98a8b3;
-  border: 1px solid #98a8b3;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
-  margin-top: 15px; }
-  main.program .more-events:hover {
-    color: #fff;
-    background-color: #98a8b3;
+        main.program .events .event .view:hover {
+          opacity: .8;
+          -webkit-transition: .3s;
+          transition: .3s; }
+      main.program .events .event .thumb {
+        height: 280px;
+        width: 100%;
+        background-size: cover;
+        margin-bottom: 10px; }
+  main.program .more-events {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding: 7px;
+    color: #98a8b3;
+    border: 1px solid #98a8b3;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     -webkit-transition: .3s;
-    transition: .3s; }
-
-main.program .schedule {
-  display: block;
-  margin-top: 30px; }
-  main.program .schedule h2 {
-    width: 50%;
-    float: left; }
-  main.program .schedule time {
-    float: right;
-    text-align: right;
-    width: 50%;
-    font-size: 20px;
-    color: 333px; }
+    transition: .3s;
+    margin-top: 15px; }
+    main.program .more-events:hover {
+      color: #fff;
+      background-color: #98a8b3;
+      -webkit-transition: .3s;
+      transition: .3s; }
+  main.program .schedule {
+    display: block;
+    margin-top: 30px; }
+    main.program .schedule h2 {
+      width: 50%;
+      float: left; }
+    main.program .schedule time {
+      float: right;
+      text-align: right;
+      width: 50%;
+      font-size: 20px;
+      color: 333px; }
+    main.program .schedule ul {
+      margin-top: 20px; }
+      main.program .schedule ul li {
+        padding-left: 0;
+        display: inline-block;
+        width: 14%;
+        text-align: center;
+        position: relative;
+        height: 44px;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        main.program .schedule ul li::before {
+          display: none; }
+        main.program .schedule ul li a {
+          font-size: 15px;
+          color: #3e85b4;
+          font-family: OpenSansLight;
+          text-decoration: underline;
+          height: 100%;
+          width: 100%;
+          display: block;
+          padding-top: 8px;
+          position: relative; }
+        main.program .schedule ul li:hover {
+          background-color: #0070bb;
+          -webkit-transition: .3s;
+          transition: .3s; }
+          main.program .schedule ul li:hover a {
+            color: #fff;
+            -webkit-transition: .3s;
+            transition: .3s; }
+        main.program .schedule ul li.active {
+          background-color: #0070bb; }
+          main.program .schedule ul li.active a {
+            color: #fff;
+            text-decoration: none; }
+    main.program .schedule .tab-wr {
+      padding: 0 18px;
+      background-color: #fcfcfc;
+      border: 1px solid #ebedec;
+      margin-bottom: 20px; }
+      main.program .schedule .tab-wr table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px; }
+        main.program .schedule .tab-wr table tr {
+          border-bottom: 1px solid #ebedec; }
+          main.program .schedule .tab-wr table tr:last-child {
+            border-bottom: none; }
+          main.program .schedule .tab-wr table tr td {
+            padding: 20px 0;
+            font-size: 18px;
+            color: #1f1f1f; }
+            main.program .schedule .tab-wr table tr td:first-child {
+              font-size: 21px;
+              font-family: OpenSansSemibold;
+              padding-right: 15px; }
+          main.program .schedule .tab-wr table tr.active {
+            background-color: #0070bb;
+            position: relative; }
+            main.program .schedule .tab-wr table tr.active .time {
+              height: 100%;
+              position: relative; }
+              main.program .schedule .tab-wr table tr.active .time::before {
+                content: '';
+                position: absolute;
+                left: -18px;
+                top: -20px;
+                background-color: #0070bb;
+                height: 70px;
+                width: 18px; }
+            main.program .schedule .tab-wr table tr.active .title {
+              height: 100%;
+              position: relative; }
+              main.program .schedule .tab-wr table tr.active .title::after {
+                content: '';
+                position: absolute;
+                right: -18px;
+                top: -24px;
+                background-color: #0070bb;
+                height: 70px;
+                width: 18px; }
+              main.program .schedule .tab-wr table tr.active .title a {
+                font-size: 16px;
+                right: 83px;
+                position: absolute;
+                top: 0;
+                color: #fff;
+                text-decoration: none;
+                -webkit-transition: .3s;
+                transition: .3s; }
+                main.program .schedule .tab-wr table tr.active .title a:hover {
+                  opacity: .8;
+                  -webkit-transition: .3s;
+                  transition: .3s; }
+                main.program .schedule .tab-wr table tr.active .title a::before {
+                  content: '\f105';
+                  position: absolute;
+                  font-family: FontAwesome;
+                  right: -15px;
+                  font-size: 18px; }
+            main.program .schedule .tab-wr table tr.active td {
+              color: #fff; }

@@ -1189,6 +1189,7 @@ main.about {
 	}
 }
 main.program {
+	padding-bottom: 70px;
 	.main-inner-10 {
 		padding: 0 26px 30px;	
 	}
@@ -1198,6 +1199,13 @@ main.program {
 			display: inline-block;
 			padding: 0;
 			font-size: 14px;
+			position: relative;
+			i {
+			    position: absolute;
+			    top: 10px;
+			    right: 50px;
+			    color: $headerBottomBackground;
+			}
 			&::before {
 				display: none;
 			}
@@ -1205,7 +1213,7 @@ main.program {
 				font-size: 20px;
 				color: #1f1f1f;
 				margin-right: 74px;
-			}
+			}			
 			label {
 				cursor: pointer;
 			}
@@ -1312,6 +1320,127 @@ main.program {
 			width: 50%;
 			font-size: 20px;
 			color: 333px;
+		}
+		ul {
+			margin-top: 20px;
+			li {
+				padding-left: 0;
+				display: inline-block;
+				width: 14%;
+				text-align: center;
+				position: relative;
+				height: 44px;
+				transition: .3s;
+				&::before {
+					display: none;
+				}
+				a {
+					font-size: 15px;
+					color: #3e85b4;
+					font-family: OpenSansLight;
+					text-decoration: underline;
+					height: 100%;
+					width: 100%;
+					display: block;
+					padding-top: 8px;
+					position: relative;
+				}
+				&:hover {
+					background-color: #0070bb;
+					transition: .3s;
+					a {
+						color: #fff;
+						transition: .3s;
+					}
+				}
+				&.active {
+					background-color: #0070bb;
+					a {
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.tab-wr {
+			padding: 0 18px;
+			background-color: #fcfcfc;
+			border: 1px solid #ebedec;
+			margin-bottom: 20px;
+			table {
+				width: 100%;
+				max-width: 100%;
+				margin-bottom: 15px;
+				tr {
+					border-bottom: 1px solid #ebedec;
+					&:last-child {
+						border-bottom: none;
+					}
+					td {
+						padding: 20px 0;
+						font-size: 18px;
+						color: #1f1f1f;
+						&:first-child {
+							font-size: 21px;
+							font-family: OpenSansSemibold;
+							padding-right: 15px;
+						}
+					}
+					&.active {
+						background-color: #0070bb;
+						position: relative;
+						.time {
+							height: 100%;
+							position: relative;
+							&::before {
+							    content: '';
+							    position: absolute;
+							    left: -18px;
+							    top: -20px;
+							    background-color: #0070bb;
+							    height: 70px;
+							    width: 18px;
+							}							
+						}
+						.title {
+							height: 100%;
+							position: relative;
+							&::after {
+								content: '';
+								position: absolute;
+								right: -18px;
+							    top: -24px;
+								background-color: #0070bb;
+							 	height: 70px;
+								width: 18px;
+							}	
+							a {
+								font-size: 16px;
+								right: 83px;
+								position: absolute;
+								top: 0;
+								color: #fff;
+								text-decoration: none;
+								transition: .3s;
+								&:hover {
+									opacity: .8;
+									transition: .3s;
+								}
+								&::before {
+									content: '\f105';
+									position: absolute;
+									font-family: FontAwesome;
+									right: -15px;
+									font-size: 18px;
+								}		
+							}
+						}
+						td {
+							color: #fff;
+						}
+					}
+				}
+			}
 		}
 	}
 }
