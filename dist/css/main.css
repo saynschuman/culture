@@ -296,6 +296,19 @@ main.about .vjs-afterglow-skin .vjs-big-play-button:before {
   -webkit-border-top-left-radius: 0;
           border-top-left-radius: 0; }
 
+#from-error,
+#to-error {
+  position: absolute;
+  width: 189px;
+  display: block;
+  height: 17px;
+  z-index: 999999;
+  left: 12px;
+  top: -19px;
+  color: red;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
 .wrapper {
   width: 1366px;
   position: relative;
@@ -1267,6 +1280,8 @@ main.program ul.choose-block {
       padding-left: 10px;
       margin-left: 10px;
       margin-right: 40px; }
+      main.program ul.choose-block li input.error {
+        border: 1px solid red; }
     main.program ul.choose-block li input[type="submit"] {
       background-color: #003d66;
       -webkit-border-radius: 3px;

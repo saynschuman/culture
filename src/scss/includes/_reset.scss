@@ -264,3 +264,17 @@ main.about {
 .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
     border-top-left-radius: 0;
 }
+
+#from-error,
+#to-error {
+    position: absolute;
+    width: 189px;
+    display: block;
+    height: 17px;
+    z-index: 999999;
+    left: 12px;
+    top: -19px;
+    color: red;
+    font-size: 11px;  
+    background-color: rgba(255,255,255,.5);
+}

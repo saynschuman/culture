@@ -1206,6 +1206,9 @@ main.program {
 				padding-left: 10px;
 				margin-left: 10px;
 				margin-right: 40px;
+				&.error {
+				  border: 1px solid red;
+				}
 			}
 			input[type="submit"] {
 				background-color: $headerTopBackground;

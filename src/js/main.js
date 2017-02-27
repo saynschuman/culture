@@ -47,6 +47,25 @@
 
     // validation
 
+    $("#choose-date").validate({
+    	rules:{
+	      from:{
+	        required: true
+	      },
+	      to:{
+	        required: true
+	      }      
+	    },
+	    messages:{
+		      from:{
+		        required: "Будь ласка, вкажіть дату"
+		      },
+		      to:{
+		        required: "Будь ласка, вкажіть дату"
+		      }
+	      } 
+    });
+
 	 $("#contact").validate({
 	    rules:{
 	      name:{
