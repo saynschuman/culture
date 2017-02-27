@@ -317,6 +317,43 @@ main.program ul.choose-block li i {
 }
 
 @media screen and (max-width: 480px) {
+main.program .more-events {
+	width: 100%;
+}	
+main.about .vacancies .vacancy .title ul li:last-child {
+	float: none;
+}	
+main.about .vacancies .vacancy .respond form label {
+    color: #8d9ca6;
+    border: 1px solid #8d9ca6;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+}	
+main.about .vacancies .vacancy .title ul li {
+    display: block;
+    padding-left: 0;
+    font-family: OpenSansLight;
+    font-size: 15px;
+}
+main.about .vacancies .vacancy .respond form input[type="submit"] {
+    background-color: #003d66;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #003d66;
+    padding: 11px 53px;
+    color: #fff;
+    margin-left: 0;
+    transition: .3s;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+}	
 main.program .schedule .tab-wr table tr.active .title a {
 	color: transparent;
 }
