@@ -203,6 +203,99 @@ main.about .vjs-afterglow-skin .vjs-big-play-button:before {
   margin-left: -8px;
   background-image: url(../img/play-btn.png); }
 
+.ui-widget-header .ui-icon {
+  background-image: none; }
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  z-index: 99999;
+  cursor: pointer; }
+
+.ui-datepicker .ui-datepicker-title {
+  z-index: 0;
+  position: relative; }
+  .ui-datepicker .ui-datepicker-title::after {
+    position: absolute;
+    content: '\f105';
+    font-family: FontAwesome;
+    right: -15px;
+    color: #3ba4ea;
+    font-size: 14px; }
+  .ui-datepicker .ui-datepicker-title::before {
+    position: absolute;
+    content: '\f104';
+    font-family: FontAwesome;
+    left: -15px;
+    color: #3ba4ea;
+    font-size: 14px; }
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  padding: 0;
+  border: none;
+  margin: 0; }
+
+.ui-widget-header {
+  border: none;
+  background: transparent;
+  color: #333333;
+  font-weight: normal; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+  background: transparent;
+  font-weight: normal;
+  color: #747783;
+  text-align: center;
+  padding: 7px 0 4px; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: transparent;
+  font-weight: normal;
+  color: #747783;
+  text-align: center;
+  padding: 7px 0 4px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-border-radius: 100%;
+          border-radius: 100%; }
+  .ui-state-default:hover, .ui-widget-content .ui-state-default:hover, .ui-widget-header .ui-state-default:hover, .ui-button:hover, html .ui-button.ui-state-disabled:hover:hover, html .ui-button.ui-state-disabled:active:hover {
+    background-color: #3ba4ea;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s; }
+
+.ui-datepicker th {
+  font-weight: normal;
+  color: #747783; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background-color: #3ba4ea;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  text-align: center;
+  color: #fff; }
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #f2f2f2;
+  margin-top: 2px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0; }
+
 .wrapper {
   width: 1366px;
   position: relative;
@@ -301,7 +394,8 @@ header.header .header-middle {
     color: #fff; }
   header.header .header-middle .logo {
     margin-bottom: 12px;
-    display: block; }
+    display: block;
+    width: 271px; }
 
 header.header .header-bottom {
   background-color: #0070bb; }
@@ -1149,3 +1243,41 @@ main.about {
       margin-bottom: 5px;
       color: red;
       font-size: 12px; }
+
+main.program ul.choose-block {
+  margin-top: 15px; }
+  main.program ul.choose-block li {
+    display: inline-block;
+    padding: 0;
+    font-size: 14px;
+    color: #333333; }
+    main.program ul.choose-block li::before {
+      display: none; }
+    main.program ul.choose-block li:first-child {
+      font-size: 20px;
+      color: #1f1f1f;
+      margin-right: 74px; }
+    main.program ul.choose-block li input {
+      color: #7f7f7f;
+      border: 1px solid #f2f2f2;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      width: 158px;
+      height: 34px;
+      padding-left: 10px;
+      margin-left: 10px;
+      margin-right: 40px; }
+    main.program ul.choose-block li input[type="submit"] {
+      background-color: #003d66;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid #003d66;
+      color: #fff;
+      margin-left: 8px;
+      -webkit-transition: .3s;
+      transition: .3s;
+      width: 95px; }
+      main.program ul.choose-block li input[type="submit"]:hover {
+        background-color: #fff;
+        color: #003d66;
+        border: 1px solid #8d9ca6; }

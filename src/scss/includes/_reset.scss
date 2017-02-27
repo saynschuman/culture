@@ -164,3 +164,103 @@ main.about {
     background-image: url(../img/play-btn.png);
 }
 }
+
+.ui-widget-header .ui-icon {
+    // background-image: url(../img/ui-icons_444444_256x240.png);
+    background-image: none;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  z-index: 99999;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-title {
+  z-index: 0;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '\f105';
+    font-family: FontAwesome;
+    right: -15px;
+    color: #3ba4ea;
+    font-size: 14px;
+  }  
+  &::before {
+    position: absolute;
+    content: '\f104';
+    font-family: FontAwesome;
+    left: -15px;
+    color: #3ba4ea;
+    font-size: 14px;
+  }
+}
+
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+.ui-widget-header {
+    border: none;
+    background: transparent;
+    color: #333333;
+    font-weight: normal;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+    background: transparent;
+    font-weight: normal;
+    color: #747783;
+    text-align: center;
+    padding: 7px 0 4px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: transparent;
+    font-weight: normal;
+    color: #747783;
+    text-align: center;
+    padding: 7px 0 4px;
+    transition: .3s;
+    border-radius: 100%;
+        &:hover {
+          background-color: #3ba4ea;
+          text-align: center;
+          color: #fff;
+          transition: .3s;
+        }
+
+}
+
+.ui-datepicker th {
+  font-weight:  normal;
+  color: #747783;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background-color: #3ba4ea;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #f2f2f2;
+    margin-top: 2px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0;
+}

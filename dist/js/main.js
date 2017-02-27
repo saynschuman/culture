@@ -45,7 +45,7 @@
         }
     } catch (err) {};
 
-    // vlidation
+    // validation
 
 	 $("#contact").validate({
 	    rules:{
@@ -77,6 +77,9 @@
 		        email: "Email має містити символ <@>, а також ім'я доменної зони"
 		      }
 	      }           
-	  });    
+	  });   
+
+	  // datepicker
+	  $( ".datepicker" ).datepicker( $.datepicker.regional[ "uk" ] ); 	  
 
 }(jQuery));
