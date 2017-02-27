@@ -794,6 +794,12 @@ main.about {
 		font-family: OpenSansLight;
 		margin-bottom: 3px;
 	}
+	h4 {
+		font-size: 18px;
+		color: #1f1f1f;
+		font-weight: 400;
+		margin-bottom: 1px;
+	}
 	p {
 		font-size: 15px;
 		color: #1f1f1f;
@@ -1183,6 +1189,9 @@ main.about {
 	}
 }
 main.program {
+	.main-inner-10 {
+		padding: 0 26px 30px;	
+	}
 	ul.choose-block {
 		margin-top: 15px;
 		li {
@@ -1196,6 +1205,9 @@ main.program {
 				font-size: 20px;
 				color: #1f1f1f;
 				margin-right: 74px;
+			}
+			label {
+				cursor: pointer;
 			}
 			input {
 				color: #7f7f7f;
@@ -1225,6 +1237,81 @@ main.program {
 				}
 			}
 			color: #333333;
+		}
+	}
+	.events {
+		margin-top: 20px;
+		.event {
+			font-family: OpenSansLight;
+			margin: 10px 0;
+			margin-bottom: 20px;
+			.title {
+				font-size: 18px;
+				color: #333;
+				line-height: 1.6;
+				margin-bottom: -2px;
+			}
+			.date {
+				color: #808080;
+				font-size: 15px;
+			}
+			.content {
+				font-size: 15px;
+				color: #4c4c4c;
+				line-height: 1.6;
+			}
+			.view {
+				display: block;
+				color: #3e85b4;
+				font-size: 15px;
+				text-decoration: underline;
+				line-height: 1.6;
+				width: 82px;
+				transition: .3s;
+				&:hover {
+					opacity: .8;
+					transition: .3s;
+				}
+			}
+			.thumb {
+				height: 280px;
+				width: 100%;
+				background-size: cover; 
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.more-events {
+		display: block;
+		margin: 0 auto;
+		width: 150px;
+		padding: 7px;
+		color: #98a8b3;
+		border: 1px solid #98a8b3;
+		border-radius: 5px;
+		text-align: center;
+		text-decoration: none;
+		transition: .3s;
+		margin-top: 15px;
+		&:hover {
+			color: #fff;
+			background-color: #98a8b3;
+			transition: .3s;
+		}
+	}
+	.schedule {
+		display: block;
+		margin-top: 30px;
+		h2 {
+			width: 50%;
+			float: left;
+		}
+		time {
+			float: right;
+			text-align: right;
+			width: 50%;
+			font-size: 20px;
+			color: 333px;
 		}
 	}
 }
