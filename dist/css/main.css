@@ -309,6 +309,16 @@ main.about .vjs-afterglow-skin .vjs-big-play-button:before {
   font-size: 11px;
   background-color: rgba(255, 255, 255, 0.5); }
 
+.translate-menu {
+  -webkit-transform: translateX(-100px) !important;
+      -ms-transform: translateX(-100px) !important;
+          transform: translateX(-100px) !important;
+  opacity: 1 !important;
+  background-color: #003d66;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-left: 20px; }
+
 .wrapper {
   width: 1366px;
   position: relative;
@@ -320,6 +330,8 @@ main.about .vjs-afterglow-skin .vjs-big-play-button:before {
 header.header .header-top {
   padding: 15px 95px;
   background-color: #003d66; }
+  header.header .header-top button.mobile-menu {
+    display: none; }
   header.header .header-top .left-align ul li {
     display: inline-block;
     margin-right: 35px; }

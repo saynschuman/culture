@@ -15,6 +15,9 @@ header.header {
 	.header-top {
 		padding: 15px 95px;
 		background-color: $headerTopBackground;
+		button.mobile-menu {
+			display: none;
+		}		
 		.left-align {
 			ul {
 				li {

@@ -101,4 +101,13 @@
 	  // datepicker
 	  $( ".datepicker" ).datepicker( $.datepicker.regional[ "uk" ] ); 	  
 
+	  //mobile
+
+	  $('.mobile-menu').click(function(){
+	  	$('header.header .header-top .left-align').toggleClass('translate-menu');
+	  })
+	  $('.close').click(function(){
+	  	$('header.header .header-top .left-align').toggleClass('translate-menu');
+	  })
+
 }(jQuery));

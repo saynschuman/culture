@@ -278,3 +278,11 @@ main.about {
     font-size: 11px;  
     background-color: rgba(255,255,255,.5);
 }
+
+.translate-menu {
+  transform: translateX(-100px) !important;
+  opacity: 1 !important;
+  background-color: #003d66;
+  transition: .3s;
+  padding-left: 20px;
+}
