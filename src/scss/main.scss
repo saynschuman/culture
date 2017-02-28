@@ -3,7 +3,7 @@
 @import 'includes/_reset';
 
 .wrapper {
-	width: 1366px;
+	width: 100%;
 	position: relative;
 	display: block;
 	margin: 0 auto;
@@ -118,6 +118,7 @@ header.header {
 		width: 100%;
 		background-image: url(../img/header-background.jpg);
 		padding: 33px 48px;
+		background-size: cover; 
 		.slogan {
 			font-size: 16px;
 			color: #fff;
@@ -589,6 +590,11 @@ main.home {
 					font-family: OpenSansLight;
 					padding: 10px 0;
 				}
+				a {
+					&:hover {
+						text-decoration: none;
+					}
+				}
 				.view {
 					a {
 						font-size: 13.99px;
@@ -856,6 +862,18 @@ main.about {
 				font-size: 15px;
 				color: #333333;
 				margin: 10px 0;
+				height: 72px;
+				position: relative;
+				overflow: hidden;
+				&::after {
+					content: '';
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					height: 20px;
+					width: 60%;
+					background: linear-gradient(to right, transparent, #fff);
+				}
 			}
 			ul {
 				padding: 0;
@@ -1210,6 +1228,7 @@ main.program {
 			    top: 10px;
 			    right: 50px;
 			    color: $headerBottomBackground;
+			    z-index: 0;
 			}
 			&::before {
 				display: none;
@@ -1231,6 +1250,10 @@ main.program {
 				padding-left: 10px;
 				margin-left: 10px;
 				margin-right: 40px;
+				position: relative;
+				background-color: transparent; 
+				z-index: 1;
+				cursor: pointer;
 				&.error {
 				  border: 1px solid red;
 				}

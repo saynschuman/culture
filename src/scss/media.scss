@@ -124,6 +124,12 @@ main.program .schedule ul li {
 
 
 @media screen and (max-width: 991px) {
+main.about .authors .author p {
+	height: auto;
+	&::after {
+		display: none;
+	}
+}	
 main.about .tabl-wr	{
 	overflow: auto;
 	table {

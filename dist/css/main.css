@@ -330,7 +330,7 @@ main.about .vjs-afterglow-skin .vjs-big-play-button:before {
     overflow: hidden; } }
 
 .wrapper {
-  width: 1366px;
+  width: 100%;
   position: relative;
   display: block;
   margin: 0 auto;
@@ -423,7 +423,8 @@ header.header .header-middle {
   height: 130px;
   width: 100%;
   background-image: url(../img/header-background.jpg);
-  padding: 33px 48px; }
+  padding: 33px 48px;
+  background-size: cover; }
   header.header .header-middle .slogan {
     font-size: 16px;
     color: #fff; }
@@ -812,6 +813,8 @@ main.home .projects {
         color: #4c4c4c;
         font-family: OpenSansLight;
         padding: 10px 0; }
+      main.home .projects .inner .item a:hover {
+        text-decoration: none; }
       main.home .projects .inner .item .view a {
         font-size: 13.99px;
         color: #3e85b4;
@@ -1021,7 +1024,20 @@ main.about {
     main.about .authors .author p {
       font-size: 15px;
       color: #333333;
-      margin: 10px 0; }
+      margin: 10px 0;
+      height: 72px;
+      position: relative;
+      overflow: hidden; }
+      main.about .authors .author p::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 20px;
+        width: 60%;
+        background: -webkit-gradient(linear, left top, right top, from(transparent), to(#fff));
+        background: -webkit-linear-gradient(left, transparent, #fff);
+        background: linear-gradient(to right, transparent, #fff); }
     main.about .authors .author ul {
       padding: 0;
       margin: 0; }
@@ -1302,7 +1318,8 @@ main.program {
         position: absolute;
         top: 10px;
         right: 50px;
-        color: #0070bb; }
+        color: #0070bb;
+        z-index: 0; }
       main.program ul.choose-block li::before {
         display: none; }
       main.program ul.choose-block li:first-child {
@@ -1320,7 +1337,11 @@ main.program {
         height: 34px;
         padding-left: 10px;
         margin-left: 10px;
-        margin-right: 40px; }
+        margin-right: 40px;
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+        cursor: pointer; }
         main.program ul.choose-block li input.error {
           border: 1px solid red; }
       main.program ul.choose-block li input[type="submit"] {

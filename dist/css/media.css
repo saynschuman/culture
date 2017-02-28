@@ -105,6 +105,10 @@
         left: 0; } }
 
 @media screen and (max-width: 991px) {
+  main.about .authors .author p {
+    height: auto; }
+    main.about .authors .author p::after {
+      display: none; }
   main.about .tabl-wr {
     overflow: auto; }
     main.about .tabl-wr table {
