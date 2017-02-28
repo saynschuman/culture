@@ -75,6 +75,10 @@ body {
   width: 210px !important;
   opacity: 1 !important;
   transition: .3s;
+  i {
+    visibility: visible !important;
+    cursor: pointer;
+  }
 }
 
 .no-pad {
@@ -299,4 +303,12 @@ main.about {
   .owl-carousel .owl-stage-outer {
     overflow: hidden;  
   }
+}
+
+.mob {
+  display: none;
+}
+
+.desktop {
+  display: block;
 }

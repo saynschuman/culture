@@ -124,6 +124,13 @@ main.program .schedule ul li {
 
 
 @media screen and (max-width: 991px) {
+.mob {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}	
 main.about .authors .author p {
 	height: auto;
 	&::after {
@@ -131,10 +138,10 @@ main.about .authors .author p {
 	}
 }	
 main.about .tabl-wr	{
-	overflow: auto;
-	table {
-		width: 880px;
-	}
+	// overflow: auto;
+	// table {
+	// 	width: 880px;
+	// }
 }
 main.about .left {
 	width: 100%;
@@ -179,6 +186,11 @@ main.home .owl-carousel .item {
 }
 
 @media screen and (max-width: 767px) {
+header.header .header-middle {
+    background-size: cover;
+    background-position: -388px;
+    background-repeat: no-repeat;	
+}	
 main.about .authors .author .ava {
     float: none;
     display: block;
@@ -386,7 +398,7 @@ main.program ul.choose-block li:first-child {
     color: #1f1f1f;
 }	
 main.program ul.choose-block li i {
-	display: none;
+	// display: none;
 }	
 main.home .announcement .right .video-js {
     height: 181px;

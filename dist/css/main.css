@@ -119,6 +119,9 @@ body {
   opacity: 1 !important;
   -webkit-transition: .3s;
   transition: .3s; }
+  .searchClass i {
+    visibility: visible !important;
+    cursor: pointer; }
 
 .no-pad {
   padding: 0; }
@@ -329,6 +332,12 @@ main.about .vjs-afterglow-skin .vjs-big-play-button:before {
   .owl-carousel .owl-stage-outer {
     overflow: hidden; } }
 
+.mob {
+  display: none; }
+
+.desktop {
+  display: block; }
+
 .wrapper {
   width: 100%;
   position: relative;
@@ -371,17 +380,42 @@ header.header .header-top {
     header.header .header-top .right-align ul li input {
       position: absolute;
       top: 8px;
-      width: 0;
-      opacity: 0;
+      width: 86%;
+      opacity: 1;
       -webkit-border-radius: 3px;
               border-radius: 3px;
       border: none;
       height: 25px;
-      right: -25px;
-      top: -17px;
+      right: 0;
+      top: 0;
       padding-left: 4px;
-      background-color: #003d66;
+      background-color: transparent;
       color: #fff; }
+    header.header .header-top .right-align ul li i.fa-times {
+      color: #fff;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      visibility: hidden; }
+    header.header .header-top .right-align ul li .wr {
+      background: #B3C5D1;
+      position: absolute;
+      width: 0;
+      height: 30px;
+      right: -25px;
+      top: -19px;
+      opacity: 0;
+      -webkit-border-radius: 3px;
+              border-radius: 3px; }
+      header.header .header-top .right-align ul li .wr::before {
+        content: "\f002";
+        position: absolute;
+        left: 5px;
+        top: 1px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        color: #fff;
+        opacity: .7; }
     header.header .header-top .right-align ul li:nth-child(3) {
       margin-right: 25px; }
     header.header .header-top .right-align ul li:last-child a {
@@ -1341,7 +1375,8 @@ main.program {
         position: relative;
         background-color: transparent;
         z-index: 1;
-        cursor: pointer; }
+        cursor: pointer;
+        padding-right: 30px; }
         main.program ul.choose-block li input.error {
           border: 1px solid red; }
       main.program ul.choose-block li input[type="submit"] {
@@ -1353,7 +1388,8 @@ main.program {
         margin-left: 8px;
         -webkit-transition: .3s;
         transition: .3s;
-        width: 95px; }
+        width: 95px;
+        padding-right: 10px; }
         main.program ul.choose-block li input[type="submit"]:hover {
           background-color: #fff;
           color: #003d66;

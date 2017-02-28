@@ -57,16 +57,44 @@ header.header {
 					input {
 						position: absolute;
 						top: 8px;
-						width: 0;
-						opacity: 0;
+						width: 86%;
+						opacity: 1;
 						border-radius: 3px;
 						border: none;
 						height: 25px;
-					    right: -25px;
-					    top: -17px;
+					    right: 0;
+					    top: 0;
 					    padding-left: 4px;
-					    background-color: $headerTopBackground;
+					    background-color: transparent;
 					    color: #fff;
+					}
+					i.fa-times {
+						color: #fff;
+						position: absolute;
+						right: 10px;
+						top: 8px;
+						visibility: hidden;
+					}
+					.wr {
+						background: #B3C5D1; 
+						position: absolute;
+						width: 0;
+						height: 30px;
+						right: -25px;
+					    top: -19px;
+					    opacity: 0;
+					    border-radius: 3px;
+					    &::before {
+					    	content: "\f002";
+					    	position: absolute;
+					    	left: 5px;
+					    	top: 1px;
+					    	font-size: 20px;
+					    	font-family: FontAwesome;
+					    	color: #fff;
+					    	opacity: .7;
+					    }
+					    			    
 					}
 					#search {
 						// display: none;
@@ -1254,6 +1282,7 @@ main.program {
 				background-color: transparent; 
 				z-index: 1;
 				cursor: pointer;
+				padding-right: 30px;
 				&.error {
 				  border: 1px solid red;
 				}
@@ -1266,6 +1295,7 @@ main.program {
 				margin-left: 8px;
 				transition: .3s;
 				width: 95px;
+				padding-right: 10px;
 				&:hover {
 					background-color: #fff;
 					color: $headerTopBackground;

@@ -11,10 +11,14 @@
 
 	$('#search-ic').click(function(event){
 		event.preventDefault();
-		$('#search input').toggleClass('searchClass').focus();
+		$('#search .wr').toggleClass('searchClass');
+		$('#search input').focus();
+	})
+	$('.fa-times').click(function(){
+		$('#search .wr').toggleClass('searchClass');
 	})
 	$('#search input').blur(function(){
-		$('#search input').toggleClass('searchClass');
+		$('#search .wr').toggleClass('searchClass');
 	})
 
 	// $(document).keyup(function(e) {
