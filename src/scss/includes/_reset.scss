@@ -286,3 +286,17 @@ main.about {
   transition: .3s;
   padding-left: 20px;
 }
+
+.owl-carousel .owl-stage-outer {
+  overflow: auto;  
+}
+
+.owl-carousel .owl-stage-outer::-webkit-scrollbar{
+  width: 0; 
+}
+
+@-moz-document url-prefix() { 
+  .owl-carousel .owl-stage-outer {
+    overflow: hidden;  
+  }
+}

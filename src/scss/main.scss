@@ -468,6 +468,8 @@ main.home {
 			background-color: #fcfcfc;
 			float: left;
 			padding: 25px 140px;
+			display: block;
+			width: 100%;
 			.left {
 				text-align: center;
 				border-right: 1px solid #fbfbfb;
@@ -494,7 +496,7 @@ main.home {
 				padding: 0;
 				padding-left: 20px;
 				.title {
-					a {
+					span {
 						font-size: 20px;
 						color: #003d66;
 						text-decoration: none;

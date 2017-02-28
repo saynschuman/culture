@@ -190,12 +190,12 @@
     display: block;
     margin-bottom: 0; }
   main.program ul.choose-block li {
-    display: inline-block;
+    display: block;
     padding: 0;
     font-size: 14px;
     position: relative;
     color: #333333;
-    width: 49%; }
+    width: 100%; }
   main.program ul.choose-block li i {
     position: absolute;
     top: 10px;
@@ -206,9 +206,9 @@
     display: none; }
   main.program ul.choose-block li input {
     margin: 0;
-    margin-right: 40px;
+    margin-right: 0;
     width: 100%;
-    margin-bottom: 10px; }
+    margin-bottom: 11px; }
   main.program ul.choose-block li:last-child {
     display: block;
     margin-left: 0; }
@@ -254,6 +254,20 @@
     padding-bottom: 30px; } }
 
 @media screen and (max-width: 480px) {
+  #from-error, #to-error {
+    position: absolute;
+    width: 189px;
+    display: block;
+    height: 17px;
+    z-index: 999999;
+    left: 0;
+    top: -15px;
+    color: red;
+    font-size: 11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    width: 100%;
+    padding-right: 0; }
   main.program .more-events {
     width: 100%; }
   main.about .vacancies .vacancy .title ul li:last-child {
@@ -310,4 +324,12 @@
     margin-bottom: 20px; }
   footer.footer .col {
     width: 100% !important;
-    float: none !important; } }
+    float: none !important; }
+  footer.footer .col,
+  footer.footer .col:nth-child(2),
+  footer.footer .col:last-child {
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 20px; }
+  footer.footer .col:last-child {
+    margin-bottom: 20px; } }

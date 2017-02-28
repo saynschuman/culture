@@ -110,4 +110,9 @@
 	  	$('header.header .header-top .left-align').toggleClass('translate-menu');
 	  })
 
+
+	  
+	   
+
+
 }(jQuery));
