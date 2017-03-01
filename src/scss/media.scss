@@ -229,6 +229,12 @@ main.home .owl-carousel .item {
 	}
 }
 
+@media screen and (max-width: 820px){
+	main.about .awards table tr td {
+		font-size: 14px;
+	}
+}
+
 @media screen and (max-width: 767px) {
 header.header .header-middle {
     background-size: cover;
@@ -378,11 +384,11 @@ main.program ul.choose-block li i {
 	}
 	main.about .awards table tr td {
 		font-size: 12px;
-		padding-top: 8px;
+		padding-top: 5px;
 	}
 	main.about .awards table tr td::before {
-		left: 8px;
-		top: 8px;
+		left: 5px;
+		top: 5px;
 	}
 }
 
