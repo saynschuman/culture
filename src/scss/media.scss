@@ -124,6 +124,50 @@ main.program .schedule ul li {
 
 
 @media screen and (max-width: 991px) {
+main.about .awards table tr {
+	display: block;
+	width: 100%;
+}	
+main.about .awards table tr th {
+	display: none;
+}	
+main.about .awards table tr td {
+	display: block;
+	width: 100% !important;
+	position: relative;
+	border-bottom: 1px solid #c3c3c3;
+	position: relative;
+	padding-left: 50%;
+	&::before {
+	    content: attr(data-label);
+	    float: left;
+	    display: block;
+	    width: 50%;
+	    font-weight: 300;
+	    height: 100%;
+	    top: 15px;
+	    padding-right: 20px;
+	    padding-left: 0;
+	    font-family: OpenSansSemibold;
+	    position: absolute;
+	    left: 15px;
+	}	
+	&:nth-child(5) {
+		&::before {
+			color: transparent;
+		}
+	}
+	&::after {
+		content: "";
+		border-right: 1px solid #c3c3c3;
+		float: left;
+		position: absolute;
+		right: 52%;
+		padding: 0px 0px 36px 0 !important;
+		height: 100%;
+		top: 0;
+	}
+}	
 .mob {
   display: block;
 }
@@ -331,6 +375,14 @@ main.program ul.choose-block li i {
 	}	
 	main.about {
 	    padding-bottom: 30px;
+	}
+	main.about .awards table tr td {
+		font-size: 12px;
+		padding-top: 8px;
+	}
+	main.about .awards table tr td::before {
+		left: 8px;
+		top: 8px;
 	}
 }
 

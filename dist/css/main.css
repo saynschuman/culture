@@ -1162,6 +1162,8 @@ main.about {
           width: 10%; }
         main.about .awards table tr td:nth-child(6) {
           width: 30%; }
+        main.about .awards table tr td span {
+          display: block; }
   main.about .vacancies {
     color: #1f1f1f; }
     main.about .vacancies .vacancy .title {

@@ -1016,7 +1016,10 @@ main.about {
     				}
     				&:nth-child(6) {
     					width: 30%;
-    				}    				
+    				}    	
+    				span {
+    					display: block;
+    				}			
     			}
     		}
 		}
